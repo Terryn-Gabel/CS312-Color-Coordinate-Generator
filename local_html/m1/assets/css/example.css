@@ -1,0 +1,43 @@
+* {
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    color: #141259;
+    padding: 15px 30px ;
+}
+body {
+    border: 2px solid #141259;
+    width: 800px;
+    margin: auto;
+}
+main{
+    padding: 15px;
+}
+main p{
+    text-indent: 5%;
+}
+ul {
+    background-color: #141259;
+    list-style-type: none;
+    overflow: hidden;
+}
+li {
+    float: left;
+}
+li a {
+    padding: 8px 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+li a:hover {
+    background-color: #200F8C;
+    color: white;
+}
+.active {
+    background-color: #F2B705;
+    color: black;
+    font-weight: bold;
+}
