@@ -18,6 +18,7 @@ class Controller_Mistone1 extends Controller_Template
   
   public function action_color()
   {
+    //not implemented yet
     $data = array();
     $this->template->title = 'Cams Interior Design Color Coordinate';
     $this->template->content = View::forge('pages/homepg', $data);
