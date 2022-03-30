@@ -22,11 +22,11 @@
   </script>
   </head>
   <body>
-    <form action = "https://www.cs.colostate.edu:4444/~hillyard/m1/index/mistone1/color" name="myForm" onsubmit="return validateInput()">
+    <form action = "color" name="myForm" onsubmit="return validateInput()">
       <label for="rowscol">Number of Rows/Columns:</label>
-      <input type=:"number" min="1" max="26" name="rowscol" id="rowscol" required>
+      <input type="number" min="1" max="26" name="rowscol" id="rowscol" required>
       <label for="colors">Number of Colors:</label>
-      <input type=:"number" min="1" max="10" name="colors" id="colors" required>
+      <input type="number" min="1" max="10" name="colors" id="colors" required>
       <input type="submit" value="Submit">
     </form>  
   </body>
