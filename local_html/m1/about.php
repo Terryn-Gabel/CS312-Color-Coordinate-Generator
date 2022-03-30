@@ -17,7 +17,7 @@
     <p>  My name is Terryn Gabel. I am a senior at Colorado State University, studying Computer Science, and a Software Engineer intern. In my spare time I enjoy playing video games and spoiling my cat. </p>
       <img src="../images/Terrynphoto.png"></img>
 
-<h4> Turner Cyrus </h4>
+<h4> Cyrus Turner </h4>
   </br>
   <p> Hi my name is Cyrus, and I am the chief marketing officer at Cam’s Interior Design Services. I am also a Colorado State University student who is currently enrolled in CS 312 and is about to graduate. Outside of my professional life, I am passionate about playing and producing music. </p>
 <img src="../images/Cyrusphoto.png"</img>
