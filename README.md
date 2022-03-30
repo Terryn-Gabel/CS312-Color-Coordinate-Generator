@@ -6,5 +6,10 @@ Hi my name is Ashlyn! I am a Junior enrolled in CS312, Modern Web Applictions, a
 Rachel Hall's biography:
 My name is Rachel Hall. I am a senior at Colorado State University. I have a cute dog and work for a Cybersecurity company!
 
+
 Terryn Gabel's biography:
 My name is Terryn Gabel. I am a senior at Colorado State University, studying Computer Science, and a Software Engineer intern. In my spare time I enjoy playing video games and spoiling my cat.
+
+Cyrus Turner's biography: 
+Hi my name is Cyrus, and I am the chief marketing officer at Cam’s Interior Design Services. I am also a Colorado State University student who is currently enrolled in CS 312 and is about to graduate. Outside of my professional life, I am passionate about playing and producing music. 
+
