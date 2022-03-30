@@ -6,6 +6,7 @@ class Controller_Mistone1 extends Controller_Template
   {
     $data = array();
     $this->template->title = 'Cams Interior Design';
+    $this->template->css = "example.css";
     $this->template->content = View::forge('pages/homepg', $data);
   }
   
@@ -13,6 +14,7 @@ class Controller_Mistone1 extends Controller_Template
   {
     $data = array();
     $this->template->title = 'Cams Interior Design About';
+    $this->template->css = "example.css";
     $this->template->content = View::forge('pages/Aboutpg', $data);
   }
   
@@ -21,7 +23,8 @@ class Controller_Mistone1 extends Controller_Template
     //not implemented yet
     $data = array();
     $this->template->title = 'Cams Interior Design Color Coordinate';
-    $this->template->content = View::forge('pages/homepg', $data);
+    $this->template->css = "example.css";
+    $this->template->content = View::forge('pages/color', $data);
   }
 }
 ?>

@@ -1,18 +1,4 @@
-<!DOCTYPE HTML>
-<html>
 
-<body>
-<img src= "../images/ramlogo.png"></a>
-
-<h1> Cam's Interior Design Services </h1>
-
-<br>
-<br>
-
-<a href="about.php">About Us</a>
-<a href="color.php"> Generate Color Coordinates </a>
-  </body>
-</html>
 <?php
 /**
  * Fuel is a fast, lightweight, community driven PHP 5.4+ framework.
@@ -65,7 +51,7 @@ define('DOCROOT', __DIR__.DIRECTORY_SEPARATOR);
  * -----------------------------------------------------------------------------
  */
 
-define('APPPATH', realpath(__DIR__.'/../../../fuel/app/').DIRECTORY_SEPARATOR);
+define('APPPATH', realpath(__DIR__.'/../../fuel/app/').DIRECTORY_SEPARATOR);
 
 /**
  * -----------------------------------------------------------------------------
@@ -73,7 +59,7 @@ define('APPPATH', realpath(__DIR__.'/../../../fuel/app/').DIRECTORY_SEPARATOR);
  * -----------------------------------------------------------------------------
  */
 
-define('PKGPATH', realpath(__DIR__.'/../../../fuel/packages/').DIRECTORY_SEPARATOR);
+define('PKGPATH', realpath(__DIR__.'/../../fuel/packages/').DIRECTORY_SEPARATOR);
 
 /**
  * -----------------------------------------------------------------------------
@@ -81,7 +67,7 @@ define('PKGPATH', realpath(__DIR__.'/../../../fuel/packages/').DIRECTORY_SEPARAT
  * -----------------------------------------------------------------------------
  */
 
-define('COREPATH', realpath(__DIR__.'/../../../fuel/core/').DIRECTORY_SEPARATOR);
+define('COREPATH', realpath(__DIR__.'/../../fuel/core/').DIRECTORY_SEPARATOR);
 
 /**
  * -----------------------------------------------------------------------------
