@@ -30,11 +30,16 @@ class Controller_Mistone1 extends Controller_Template
   public function get_index() {
     $rowcol = Input::get('rowcol');
     $numcolors = Input::get('numcolors');
+    
     if ($rowcol < 1 || $rowcol > 26) {
-      die('bad row col');
-    } else {
-      die('good row col');
-    }
+        $fail_view = View::forge("pages/errors/rowcolerr.php");
+        $data = array(
+            "failure_view" => $fail_view
+        );
+        $this->template->title = 'Cams Interior Design Color Coordinate';
+        $this->template->css = "example.css";
+        $this->template->content = View::forge('pages/color', $data);
+    } 
   }
 }
 ?>

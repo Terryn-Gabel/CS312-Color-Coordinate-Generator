@@ -27,6 +27,14 @@
 
     echo Form::close();
 ?>
+<div>
+  <?php
+      if (isset($failure_view)) {
+          echo $failure_view;
+      }
+  ?>
+</div>
+
 </body>
 
 
