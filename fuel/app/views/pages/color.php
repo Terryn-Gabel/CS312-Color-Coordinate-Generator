@@ -32,9 +32,11 @@
       if (isset($failure_view)) {
           echo $failure_view;
       }
+      if (isset($table_view)) {
+        echo $table_view;
+      }
   ?>
 </div>
-
 </body>
 
 

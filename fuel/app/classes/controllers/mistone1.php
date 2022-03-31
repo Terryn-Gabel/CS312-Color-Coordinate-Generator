@@ -19,8 +19,7 @@ class Controller_Mistone1 extends Controller_Template
   }
   
   public function action_color()
-  {
-    //not implemented yet
+  {   
     $data = array();
     $this->template->title = 'Cams Interior Design Color Coordinate';
     $this->template->css = "example.css";
@@ -40,7 +39,31 @@ class Controller_Mistone1 extends Controller_Template
         $this->template->css = "example.css";
         $this->template->content = View::forge('pages/color', $data);
     } 
+    else if ($numcolors < 1 || $numcolors > 11) {
+      $fail_view = View::forge("pages/errors/colorserr.php");
+      $data = array(
+          "failure_view" => $fail_view
+      );
+      $this->template->title = 'Cams Interior Design Color Coordinate';
+      $this->template->css = "example.css";
+      $this->template->content = View::forge('pages/color', $data);
+    } 
+    else {
+      $table_data = array(
+        "rowcol" => $rowcol,
+        "numcolors" => $numcolors,
+      );
+      $table_view = View::forge("pages/table.php", $table_data);
+      $data = array(
+        "table_view" => $table_view,
+      );
+  
+      $this->template->title = 'Cams Interior Design Color Coordinate';
+      $this->template->css = "example.css";
+      $this->template->content = View::forge('pages/color', $data);
+    }
   }
 }
 ?>
   
+  <!-- https://www.cs.colostate.edu:4444/~tng24/m1/index/mistone1/color -->
