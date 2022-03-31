@@ -1,7 +1,4 @@
 
-<script>
-  <?php echo Asset::js('color.js'); ?>
-</script>
 
 <body>
   <!-- <form action = "color" name="myForm" onsubmit="return validateInput()">
