@@ -26,6 +26,16 @@ class Controller_Mistone1 extends Controller_Template
     $this->template->css = "example.css";
     $this->template->content = View::forge('pages/color', $data);
   }
+
+  public function get_index() {
+    $rowcol = Input::get('rowcol');
+    $numcolors = Input::get('numcolors');
+    if ($rowcol < 1 || $rowcol > 26) {
+      die('bad row col');
+    } else {
+      die('good row col');
+    }
+  }
 }
 ?>
   
