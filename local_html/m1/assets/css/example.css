@@ -49,3 +49,17 @@ img{
 .floatClear{
     clear: both;
 }
+
+.upper{
+    width: 95%;
+    margin:auto;
+    text-align: center;
+}
+.upper, .upper td{
+    border: 2px solid;
+    border-color: grey;
+    border-collapse: collapse;
+}
+.right{
+    width: 80%;
+}

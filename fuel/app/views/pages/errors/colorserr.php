@@ -1,3 +1,3 @@
 <p>
-    The number of Colors must be between 1 and 11.
+    The number of Colors must be more than 1 and less than 11.
 </p>

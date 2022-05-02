@@ -39,7 +39,7 @@ class Controller_Mistone1 extends Controller_Template
         $this->template->css = "example.css";
         $this->template->content = View::forge('pages/color', $data);
     } 
-    else if ($numcolors < 1 || $numcolors > 11) {
+    else if ($numcolors < 1 || $numcolors >= 11) {
       $fail_view = View::forge("pages/errors/colorserr.php");
       $data = array(
           "failure_view" => $fail_view
