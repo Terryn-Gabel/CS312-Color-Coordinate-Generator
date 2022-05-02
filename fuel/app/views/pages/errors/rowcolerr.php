@@ -1,3 +1,3 @@
 <p>
-    The number of Rows and Columns must be between 1 and 26.
+    The number of Rows and Columns must be from 1 to 26.
 </p>
