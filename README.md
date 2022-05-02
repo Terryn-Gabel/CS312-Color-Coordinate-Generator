@@ -35,23 +35,23 @@ This is the group project repo for team 21!
 #### Table requirements:
 - [ ] Table 1 (upper table):
   - [ x] 2 col by `x` row (`x` = numColors param)
-  - [ ] no header row
-  - [ ] spans most of the width of the page
-  - [ ] right column: 80% table width
-  - [ ] left column
-     - [ ] 20% table width
-     - [ ] each cell is a drop-down with 10 color names (these should be ordered in an intuitive way for the user)
-        - [ ] each cell has a different default set color
-           - [ ] 1. red
-           - [ ] 2. orange
-           - [ ] 3. yellow
-           - [ ] 4. green
-           - [ ] 5. blue
-           - [ ] 6. purple
-           - [ ] 7. grey
-           - [ ] 8. brown
-           - [ ] 9. black
-           - [ ] 10. teal
+  - [x] no header row
+  - [x] spans most of the width of the page
+  - [ x] right column: 80% table width
+  - [ x] left column
+     - [ x] 20% table width
+     - [ x] each cell is a drop-down with 10 color names (these should be ordered in an intuitive way for the user)
+        - [ x] each cell has a different default set color
+           - [ x] 1. red
+           - [ x] 2. orange
+           - [ x] 3. yellow
+           - [ x] 4. green
+           - [ x] 5. blue
+           - [ x] 6. purple
+           - [ x] 7. grey
+           - [ x] 8. brown
+           - [ x] 9. black
+           - [ x] 10. teal
          - [ ] No two drop-downs can select the same color at the same time. If this happens:
            - [ ] revert the most recently changed drop-down to the previous value selected
            - [ ] inform the user in a non-intrusive way (ie not an `alert()`)
