@@ -3,7 +3,7 @@
     <?php
         $colors = array('red','orange','yellow','green','teal','blue','purple','grey','black','brown');
 
-        for($i = 0; $i < $numcolors; $i++){
+        for($i = 0; $i < $numcolors; $i++){       
             echo '<tr>';
             echo '<td>';
             echo Form::select('color', $colors[$i], array(
@@ -19,7 +19,7 @@
                 'brown' => 'Brown',
             ));
             echo '</td>';
-            echo '<td class="right">X</td>';
+            echo '<td class="right"> </td>';
             echo '</tr>';
         }
         
@@ -28,10 +28,26 @@
 <br>
 <table class="lower">
     <?php
-        for($i = 0; $i < $rowcol; $i++){
+        $alphabet = array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z');
+        for($i = 0; $i < $rowcol+1; $i++){
             echo '<tr>';
-            for($j = 0; $j < $rowcol; $j++){
-                echo '<td>X</td>';
+            for($j = 0; $j < $rowcol+1; $j++){
+                if($i == 0 && $j == 0){
+                    echo '<td></td>';
+                }else if($i == 0){ // letter columns
+                    echo '<td>';
+                    echo $alphabet[$j-1];
+                    echo '</td>';
+                }else if($j == 0){ // number rows
+                    echo '<td>';
+                    echo $i;
+                    echo '</td>';
+                }else{
+                    echo '<td>';
+                    echo '';
+                    echo '</td>';
+                }
+                
             }
             echo '</tr>';
         }
