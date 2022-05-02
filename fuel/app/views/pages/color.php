@@ -1,5 +1,4 @@
 
-
 <body>
   <!-- <form action = "color" name="myForm" onsubmit="return validateInput()">
     <label for="rowscol">Number of Rows/Columns:</label>
@@ -10,7 +9,7 @@
   </form>   -->
   <?php
     echo Form::open(array(
-        "action" => "index/mistone1",
+        "action" => "index/mistone1/color",
         "method" => "get",
         "id" => "fuel_form"
     ));
@@ -23,17 +22,18 @@
     echo Form::submit('submitbtn', 'Submit', array('rowcol', 'numcolors'));
 
     echo Form::close();
-?>
-<div>
-  <?php
-      if (isset($failure_view)) {
-          echo $failure_view;
-      }
-      if (isset($table_view)) {
-        echo $table_view;
-      }
   ?>
-</div>
+  <div>
+    <?php
+        if (isset($failure_view)) {
+            echo $failure_view;
+        }
+        if (isset($table_view)) {
+          echo $table_view;
+        }
+    ?>
+  </div>
+
 </body>
 
 

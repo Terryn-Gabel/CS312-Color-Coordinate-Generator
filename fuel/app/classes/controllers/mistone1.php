@@ -1,7 +1,7 @@
 <?php
 class Controller_Mistone1 extends Controller_Template
 {
-
+  
   public function action_home()
   {
     $data = array();
@@ -26,7 +26,7 @@ class Controller_Mistone1 extends Controller_Template
     $this->template->content = View::forge('pages/color', $data);
   }
 
-  public function get_index() {
+  public function get_color() {
     $rowcol = Input::get('rowcol');
     $numcolors = Input::get('numcolors');
     
@@ -65,5 +65,3 @@ class Controller_Mistone1 extends Controller_Template
   }
 }
 ?>
-  
-  <!-- https://www.cs.colostate.edu:4444/~tng24/m1/index/mistone1/color -->
