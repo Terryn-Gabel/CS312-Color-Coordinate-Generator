@@ -6,12 +6,15 @@
     <meta name="author" content="Terryn Gabel, Rachel Hall, Ashlyn Hillyard, Cyrus Turner">
 
     <?php echo Asset::css($css) ?>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <?php echo Asset::js($js) ?>
+
 </head>
 
 
 <body>
     <header>
-        <h1><?php echo $title; ?></h1>
+        <h1>Cam's Interior Design Co.</h1>
     </header>
 
     <ul>
@@ -21,6 +24,8 @@
     </ul>
 
     <main>
+        <h2><?php echo $title; ?></h2>
+
         <?php echo $content; ?> 
     </main>
 

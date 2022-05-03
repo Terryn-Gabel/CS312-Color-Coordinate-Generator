@@ -1,27 +1,31 @@
 <?php
 class Controller_Mistone1 extends Controller_Template
 {
+
   public function action_home()
   {
     $data = array();
-    $this->template->title = 'Cams Interior Design';
+    $this->template->title = 'Home Page';
     $this->template->css = "example.css";
+    $this->template->js = "color.js";
     $this->template->content = View::forge('pages/homepg', $data);
   }
   
   public function action_about()
   {
     $data = array();
-    $this->template->title = 'Cams Interior Design About';
+    $this->template->title = 'About Page';
     $this->template->css = "example.css";
+    $this->template->js = "color.js";
     $this->template->content = View::forge('pages/Aboutpg', $data);
   }
   
   public function action_color()
   {   
     $data = array();
-    $this->template->title = 'Cams Interior Design Color Coordinate';
+    $this->template->title = 'Color Coordinate Generator';
     $this->template->css = "example.css";
+    $this->template->js = "color.js";
     $this->template->content = View::forge('pages/color', $data);
   }
 
@@ -53,8 +57,9 @@ class Controller_Mistone1 extends Controller_Template
       );
     }
 
-    $this->template->title = 'Cams Interior Design Color Coordinate';
+    $this->template->title = 'Color Coordinate Generator';
     $this->template->css = "example.css";
+    $this->template->js = "color.js";
     $this->template->content = View::forge('pages/color', $data);
 
   }
