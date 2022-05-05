@@ -4,11 +4,13 @@
     <?php
         $colors = array('red','orange','yellow','green','teal','blue','purple','grey','black','brown');
         $ids = array('color0','color1','color2','color3','color4','color5','color6','color7','color8','color9');
+        $radioselect = array(true, false, false, false, false, false, false, false, false, false );
 
         for($i = 0; $i < $numcolors; $i++){
             
             echo '<tr>';
             echo '<td>';
+            echo Form::radio('color', $colors[$i], $radioselect[$i]);
             echo Form::select($ids[$i], $colors[$i], array(
                 'red' => 'Red',
                 'orange' => 'Orange',
@@ -42,15 +44,22 @@
                     if($i == 0 && $j == 0){
                         echo '<td></td>';
                     }else if($i == 0){ // letter columns
-                        echo '<td>';
+                        echo '<td id="';
+                        echo $alphabet[$j-1];
+                        echo '">';
                         echo $alphabet[$j-1];
                         echo '</td>';
                     }else if($j == 0){ // number rows
-                        echo '<td>';
+                        echo '<td id="';
+                        echo $i;
+                        echo '">';
                         echo $i;
                         echo '</td>';
                     }else{
-                        echo '<td>';
+                        echo '<td id="';
+                        echo $alphabet[$j-1];
+                        echo $i;
+                        echo '">';
                         echo '';
                         echo '</td>';
                     }
