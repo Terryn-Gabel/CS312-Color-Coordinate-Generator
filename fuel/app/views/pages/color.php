@@ -1,4 +1,3 @@
-
 <body>
   
   <?php
@@ -26,7 +25,7 @@
     echo '</div>';
   ?>
   
-  <div>
+  <div id="toPrint">
     <?php
       if (isset($table_view)) {
         echo $table_view;
