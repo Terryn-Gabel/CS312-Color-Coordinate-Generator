@@ -125,3 +125,7 @@ button{
     padding: 8px 16px;
     margin: 8px 16px;
 }
+
+.print{
+    background-color: lightblue;
+}

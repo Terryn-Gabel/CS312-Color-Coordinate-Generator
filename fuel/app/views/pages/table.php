@@ -24,7 +24,9 @@
                 'brown' => 'Brown',
             ));
             echo '</td>';
-            echo '<td class="right"> </td>';
+            echo '<td class="right" id="row';
+            echo $i;
+            echo '"> </td>';
             echo '</tr>';
         }
     ?>
