@@ -129,3 +129,8 @@ button{
 .print{
     background-color: lightblue;
 }
+
+@page{
+    filter: grayscale(100%);
+    size: A4 portrait;
+}

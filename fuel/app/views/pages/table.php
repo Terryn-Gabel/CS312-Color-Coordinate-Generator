@@ -9,7 +9,7 @@
         for($i = 0; $i < $numcolors; $i++){
             
             echo '<tr>';
-            echo '<td>';
+            echo '<td class="left">';
             echo Form::radio('color', $colors[$i], $radioselect[$i]);
             echo Form::select($ids[$i], $colors[$i], array(
                 'red' => 'Red',
