@@ -58,13 +58,11 @@ $(document).ready(() => {
 
    // revert color selection if user selects a duplicate
    $("select").change( function() {
+
       let row = $(this).parent().next()
       let rowNum = row.attr("id")
       var oldval = colorCoordData[rowNum].color
       var newval = $(this).find( "option:selected").attr("value")
-
-      $('table.lower td[style*=\'background-color: '+colorCoordData[rowNum].color+';\']').css("background-color", newval)
-      colorCoordData[rowNum].color = newval
 
       var all = []
       $( "select option:selected" ).each(function() {
@@ -81,6 +79,8 @@ $(document).ready(() => {
          $(".dupErr").delay(4000).hide(300);
       }else{
          $(".dupErr").hide(300);
+         $('table.lower td[style*=\'background-color: '+colorCoordData[rowNum].color+';\']').css("background-color", newval)
+         colorCoordData[rowNum].color = newval
       }
    });
 
@@ -123,5 +123,4 @@ $(document).ready(() => {
       window.print();
       return false;
    });
-
 });

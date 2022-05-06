@@ -23,6 +23,7 @@
                 'black' => 'Black',
                 'brown' => 'Brown',
             ));
+            echo '<p class="colorText">' . ucfirst($colors[$i]) . '</p>';
             echo '</td>';
             echo '<td class="right" id="row';
             echo $i;
