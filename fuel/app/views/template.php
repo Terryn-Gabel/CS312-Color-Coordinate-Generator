@@ -5,6 +5,7 @@
     <meta name="description" content="MileStone 1 Assignment">
     <meta name="author" content="Terryn Gabel, Rachel Hall, Ashlyn Hillyard, Cyrus Turner">
 
+    <img <?php echo Asset::img('ramlogo.png'); ?>
     <?php echo Asset::css($css) ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <?php echo Asset::js($js) ?>
@@ -31,3 +32,5 @@
 
     </div>
 </body>
+
+<p class='bottom'> * This is a website for a fake business created for CS312 at CSU. </p>

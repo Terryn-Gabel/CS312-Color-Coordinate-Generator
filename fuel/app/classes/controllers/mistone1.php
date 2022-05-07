@@ -23,7 +23,7 @@ class Controller_Mistone1 extends Controller_Template
   public function action_color()
   {   
     $data = array();
-    $this->template->title = 'Color Coordinate Generator';
+    $this->template->title = 'Virtual Painter';
     $this->template->css = "example.css";
     $this->template->js = "color.js";
     $this->template->content = View::forge('pages/color', $data);
@@ -57,7 +57,7 @@ class Controller_Mistone1 extends Controller_Template
       );
     }
 
-    $this->template->title = 'Color Coordinate Generator';
+    $this->template->title = 'Virtual Painter';
     $this->template->css = "example.css";
     $this->template->js = "color.js";
     $this->template->content = View::forge('pages/color', $data);
