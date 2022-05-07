@@ -53,6 +53,18 @@
         float: left;
         margin-right: 1%;
     }
+   
+   .studio{
+      width: 95%;
+      height: 300px;
+      align-content: center;
+   }
+   .bottom{
+      position:fixed;
+      bottom: 0;
+      padding: 8px;
+   }
+   
     .floatClear{
         clear: both;
     }
