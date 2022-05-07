@@ -19,14 +19,16 @@
     }
     main{
         padding: 15px;
+        padding-bottom: 15px;
     }
     main p{
-        text-indent: 5%;
+        /* text-indent: 5%; */
     }
     ul {
         background-color:  #1E4D2B;
         list-style-type: none;
         overflow: hidden;
+        clear: both;
     }
     li {
         float: left;
@@ -49,24 +51,24 @@
     }
     img{
         height: auto;
-        width: 100px;
+        width: 200px;
         float: left;
         margin-right: 1%;
+        float: left;
     }
-   
-   .studio{
-      width: 95%;
-      height: 300px;
-      align-content: center;
-   }
-   .bottom{
-      position:fixed;
-      bottom: 0;
-      padding: 8px;
-   }
-   
+    .headImg{
+        height: 50%;
+    }
+    .studio{
+        width: 100%;
+    }
     .floatClear{
         clear: both;
+    }
+    footer{
+        padding: 15px;
+        background-color: #1E4D2B;
+        color: white;
     }
 
     /* text input style */
@@ -158,6 +160,7 @@
         margin: 0; 
         padding: 0;
         font-size: small;
+        filter: grayscale(100%);
     }
 
     @page {
@@ -165,7 +168,7 @@
     }
 
     /* things to be hidden */
-    ul, button, .inputForm, input[type=radio], select,.dupErr{
+    ul, button, .inputForm, input[type=radio], select, .dupErr, footer, h2{
         display: none;
     }
    
@@ -179,6 +182,7 @@
         padding: 3px 5px;
         font-style: italic;
         color: black;
+        float: right;
     }
 
     header {
@@ -188,12 +192,13 @@
     } 
 
     img {
-        width: 200px;
+        width: 150px;
         float: left; 
     }
 
     h1 {
-        font-size: xx-large;
+        font-size: large;
+        float: right;
     }
 
     .colorText{
@@ -209,7 +214,7 @@
         margin-bottom: 20px;
     }
 
-    h2::after {
+    /* h2::after {
         text-align: left;
         font-size: medium;
         display: block;
@@ -217,7 +222,7 @@
         margin-top: 20px;
         margin-bottom: 20px;
         color: black;
-    }
+    } */
 
     .upper td, td p{
         font-size: xx-small;
@@ -232,9 +237,9 @@
         border: 1px solid grey;
         border-collapse: collapse;
     }
-    .upper td{
+    /* .upper td{
         height: 1vw;
-    }
+    } */
     .right{
         width: 80%;
     }
@@ -253,7 +258,7 @@
         border-collapse: collapse; 
     }
     .lower td{
-        width: 3vw; /* FIXME: this isnt square */
+        width: 3vw;
         height: 2vw;
     }
 

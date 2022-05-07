@@ -78,7 +78,7 @@ $(document).ready(() => {
          $(".dupErr").show(100);
          $(".dupErr").delay(4000).hide(300);
       }else{
-         $(".dupErr").hide(300);
+         // $(".dupErr").hide(300);
          $('table.lower td[style*=\'background-color: '+colorCoordData[rowNum].color+';\']').css("background-color", newval)
          colorCoordData[rowNum].color = newval
       }

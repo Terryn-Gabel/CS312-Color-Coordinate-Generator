@@ -1,4 +1,6 @@
 <?php
+use \Model\ColorsDBModel;
+
 class Controller_Mistone1 extends Controller_Template
 {
 
@@ -23,7 +25,7 @@ class Controller_Mistone1 extends Controller_Template
   public function action_color()
   {   
     $data = array();
-    $this->template->title = 'Virtual Painter';
+    $this->template->title = 'Virtual Painting Tool';
     $this->template->css = "example.css";
     $this->template->js = "color.js";
     $this->template->content = View::forge('pages/color', $data);
@@ -57,11 +59,29 @@ class Controller_Mistone1 extends Controller_Template
       );
     }
 
-    $this->template->title = 'Virtual Painter';
+    $this->template->title = 'Virtual Painting Tool';
     $this->template->css = "example.css";
     $this->template->js = "color.js";
     $this->template->content = View::forge('pages/color', $data);
-
   }
+
+    public function post_index() {
+        if (isset($_POST['add']) && isset($_POST['todo_text'])) {
+          ColorsDBModel::add_todo($_POST['todo_text']);
+        }
+        if (isset($_POST['delete']) && isset($_POST['todocheck'])) {
+            $checked_todos = array();
+            foreach ( $_POST['todocheck'] as $id ) {
+                $checked_todos[] = $id;
+            }
+            ColorsDBModel::delete_todos($checked_todos);
+        }
+        $data = array(
+            'todos' => ColorsDBModel::read_todos(),
+            'todo_count' => ColorsDBModel::todo_count()
+        );
+        return Response::forge(View::forge('tododbviews/todomaincontent', $data));
+    }
 }
+
 ?>
