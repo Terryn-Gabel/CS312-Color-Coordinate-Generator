@@ -32,3 +32,5 @@
 
     </div>
 </body>
+
+<p class='bottom'> * This is a website for a fake business created for CS312 at CSU. </p>
